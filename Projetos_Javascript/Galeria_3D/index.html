@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens 3D</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">  
+   
+
+</head>
+<body>
+    <h1>Galeria de Imagens</h1>
+
+    <div class="caixa">
+        <span style="--i:1;">
+            <img src="imagens/carro1.jpg" alt="carro1.jpg" onclick="abrirImagem('imagens/carro1.jpg','SUV')">
+        
+            <p>SUV</p>
+        </span>
+
+        <span style="--i:2;">
+            <img src="imagens/carro2.jpg" alt="carro2.jpg" onclick="abrirImagem('imagens/carro2.jpg','Sedan')">
+            <p>Sedan</p>
+        </span>
+        
+        <span style="--i:3;">
+            <img src="imagens/carro3.jpg" alt="carro3.jpg" onclick="abrirImagem('imagens/carro3.jpg','Tesla')">
+            <p>Tesla</p>
+        </span>
+
+        <span style="--i:4;">
+            <img src="imagens/carro4.jpg" alt="carro4.jpg" onclick="abrirImagem('imagens/carro4.jpg','Jeep')">
+            <p>Jeep</p>
+        </span>
+
+        <span style="--i:5;">
+            <img src="imagens/carro5.jpg" alt="carro5.jpg" onclick="abrirImagem('imagens/carro5.jpg','Pickup')">
+            <p>Pickup</p>
+        </span>
+
+        <span style="--i:6;">
+            <img src="imagens/carro6.jpg" alt="carro6.jpg" onclick="abrirImagem('imagens/carro6.jpg','BMW')">
+            <p>BMW</p>
+        </span>
+
+        <span style="--i:7;">
+            <img src="imagens/carro7.jpg" alt="carro7.jpg" onclick="abrirImagem('imagens/carro7.jpg','Fusca')">
+            <p>Fusca</p>
+        </span>
+
+        <span style="--i:8;">
+            <img src="imagens/carro8.jpg" alt="carro8.jpg" onclick="abrirImagem('imagens/carro8.jpg','Kombi')">
+            <p>Kombi</p>
+        </span>
+
+        <span style="--i:9;">
+            <img src="imagens/carro9.jpg" alt="carro9.jpg" onclick="abrirImagem('imagens/carro9.jpg','Porsche')">
+            <p>Porsche</p>
+        </span>
+
+        <span style="--i:10;">
+            <img src="imagens/carro10.jpg" alt="carro10.jpg" onclick="abrirImagem('imagens/carro10.jpg','Mustang')">
+            <p>Mustang</p>
+        </span>
+
+        <span style="--i:11;">
+            <img src="imagens/carro11.jpg" alt="carro11.jpg" onclick="abrirImagem('imagens/carro11.jpg','MiniCooper')">
+            <p>MiniCooper</p>
+        </span>
+
+        <span style="--i:12;">
+            <img src="imagens/carro12.jpg" alt="carro12.jpg" onclick="abrirImagem('imagens/carro12.jpg','Land Rover')">
+            <p>LandRover</p>
+        </span>
+
+    </div>
+    <script>
+        function abrirImagem(imagem, descricao) {
+            let url = `imagem.html?imagem=${imagem}&descricao=${encodeURIComponent(descricao)}`;
+            window.open(url, '_blank')
+        }
+    </script>
+</body>
+</html>
